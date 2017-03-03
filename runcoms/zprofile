@@ -45,6 +45,8 @@ typeset -gU cdpath fpath mailpath path
 path=(
   /usr/local/{bin,sbin}
   $path
+  $HOME/.rbenv/bin
+  $HOME/.rbenv/plugins/ruby-build/bin
 )
 
 #
@@ -72,3 +74,6 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+#the following line sets up shims for rbenv
+eval "$(rbenv init - )"
