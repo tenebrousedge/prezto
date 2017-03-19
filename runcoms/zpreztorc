@@ -37,7 +37,12 @@ zstyle ':prezto:load' pmodule \
   'fasd' \
   'python' \
   'ruby' \
-  'syntax-highlighting'
+  'rails' \
+  'git' \
+  'ssh' \
+  'syntax-highlighting' \
+  'history-substring-search' \
+  'prompt'
 
 #
 # Autosuggestions
@@ -71,7 +76,8 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # zstyle ':prezto:module:gnu-utility' prefix 'g'
 
 #
-# History Substring Search
+# History Substring Searc
+
 #
 
 # Set the query found color.
@@ -148,7 +154,7 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #
 
 # Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
 # zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
@@ -168,3 +174,5 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 
 # Integrate with iTerm2.
 # zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+
+stty -ixon
