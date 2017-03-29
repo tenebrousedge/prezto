@@ -13,3 +13,6 @@ fi
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias gpoh='git push origin HEAD'
+
+stty -ixon
